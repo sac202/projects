@@ -57,9 +57,6 @@ Where a.PropertyAddress is null
 
 
 
-
-
-
 -- Breaking out Address into Individual Columns (Address, City, State)
 
 
@@ -137,8 +134,6 @@ Select *
 From PortfolioProject.dbo.NashvilleHousing
 
 
-
-
 -- Change Y and N to Yes and No in "Sold as Vacant" field
 
 
@@ -163,8 +158,6 @@ SET SoldAsVacant = CASE When SoldAsVacant = 'Y' THEN 'Yes'
 	   When SoldAsVacant = 'N' THEN 'No'
 	   ELSE SoldAsVacant
 	   END
-
-
 
 
 
@@ -194,8 +187,6 @@ Order by PropertyAddress
 
 Select *
 From PortfolioProject.dbo.NashvilleHousing
-
-
 
 
 
