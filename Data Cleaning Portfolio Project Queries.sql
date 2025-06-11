@@ -55,8 +55,6 @@ JOIN PortfolioProject.dbo.NashvilleHousing b
 	AND a.[UniqueID ] <> b.[UniqueID ]
 Where a.PropertyAddress is null
 
-
-
 -- Breaking out Address into Individual Columns (Address, City, State)
 
 
@@ -143,8 +141,6 @@ Group by SoldAsVacant
 order by 2
 
 
-
-
 Select SoldAsVacant
 , CASE When SoldAsVacant = 'Y' THEN 'Yes'
 	   When SoldAsVacant = 'N' THEN 'No'
@@ -158,8 +154,6 @@ SET SoldAsVacant = CASE When SoldAsVacant = 'Y' THEN 'Yes'
 	   When SoldAsVacant = 'N' THEN 'No'
 	   ELSE SoldAsVacant
 	   END
-
-
 
 -- Remove Duplicates
 
@@ -188,10 +182,7 @@ Order by PropertyAddress
 Select *
 From PortfolioProject.dbo.NashvilleHousing
 
-
-
 -- Delete Unused Columns
-
 
 
 Select *
