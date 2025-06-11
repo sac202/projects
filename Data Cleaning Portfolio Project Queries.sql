@@ -56,8 +56,6 @@ JOIN PortfolioProject.dbo.NashvilleHousing b
 Where a.PropertyAddress is null
 
 -- Breaking out Address into Individual Columns (Address, City, State)
-
-
 Select PropertyAddress
 From PortfolioProject.dbo.NashvilleHousing
 --Where PropertyAddress is null
